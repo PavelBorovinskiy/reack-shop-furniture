@@ -18,6 +18,10 @@ body {
 	margin: 50px auto;
 }
 
+header {
+	position: relative;
+}
+
 header .logo {
 	font-weight: 600;
 	font-size: 20px;
@@ -37,6 +41,56 @@ header ul.nav li {
 
 header ul.nav li:hover {
 	opacity: 0.5;
+}
+
+header .shop-cart-button {
+	
+	float: right;
+	transition: color, transform 500ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+	transform: scale(1.5);
+	color: #ca5252;
+}
+
+header .shop-cart {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 450px;
+	background: #fafafa;
+	-webkit-box-shadow: 5px 5px 32px -1px rgba(55, 52, 56, 0.46);
+	box-shadow: 5px 5px 32px -1px rgba(55, 52, 56, 0.46);
+	z-index: 1000;
+	padding: 20px;
+}
+
+header .shop-cart .item {
+
+	width: 100%;
+	margin-left: 10px;
+	float: left;
+	padding: 20px;
+	padding-bottom: 0;
+}
+ 
+header .shop-cart .item img{
+	width: 70px;
+	float: left;
+	margin-right: 20px;
+
+}
+
+header .shop-cart .item h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+header .shop-cart .item p {
+	color: #797977;
+	font-weight: 600;
 }
 
 header .presentation {
