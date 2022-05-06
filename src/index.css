@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,7 +11,7 @@ body {
 	background: #fff;
 	color: #222;
 	font-family: 'Montserrat',
-	sans-serif;
+		sans-serif;
 	font-size: 300;
 }
 
@@ -44,7 +46,7 @@ header ul.nav li:hover {
 }
 
 header .shop-cart-button {
-	
+
 	float: right;
 	transition: color, transform 500ms ease;
 }
@@ -68,16 +70,17 @@ header .shop-cart {
 }
 
 header .shop-cart .item {
-
 	width: 100%;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	float: left;
 	padding: 20px;
 	padding-bottom: 0;
+	box-sizing: border-box;
 }
- 
-header .shop-cart .item img{
+
+header .shop-cart .item img {
 	width: 70px;
+	height: 70px;
 	float: left;
 	margin-right: 20px;
 
@@ -91,6 +94,30 @@ header .shop-cart .item h2 {
 header .shop-cart .item p {
 	color: #797977;
 	font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+	color: #ca5252;
+	float: right;
+	position: relative;
+	top: -40px;
+	cursor: pointer;
+	transition: color,
+		transform 500ms ease;
+
+}
+
+header .shop-cart .item .delete-icon:hover {
+	color: #6b0a0a;
+	transform: scale(1.5);
+}
+
+header .shop-cart .summa {
+	float: right;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 10px;
+
 }
 
 header .presentation {
@@ -118,14 +145,14 @@ header .presentation::after {
 }
 
 header .presentation::before {
-		content: 'по низким ценам';
-		position: absolute;
-		top: 250px;
-		left: 50px;
-		width: 300px;
-		font-size: 25px;
-		font-weight: 300;
-		color: #fff;
+	content: 'по низким ценам';
+	position: absolute;
+	top: 250px;
+	left: 50px;
+	width: 300px;
+	font-size: 25px;
+	font-weight: 300;
+	color: #fff;
 }
 
 main {
@@ -153,11 +180,14 @@ main .item img {
 	transition: transform 500ms ease;
 
 }
+
 main .item img:hover {
 	transform: scale(1.05);
 }
 
-main h2, main p, main b {
+main h2,
+main p,
+main b {
 	margin: 10px 20px;
 	color: #333;
 }
@@ -181,8 +211,9 @@ main .add-to-cart {
 	font-weight: 600;
 	transition: transform 500ms ease;
 }
+
 main .add-to-cart:hover {
-	 transform: scale(1.5) translateY(-5px);
+	transform: scale(1.5) translateY(-5px);
 }
 
 footer {
