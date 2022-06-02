@@ -1,4 +1,4 @@
 # React shop furniture portfolion
 
-This project  [Demo]([https://github.com/facebook/create-react-app](https://reack-shop.vercel.app/)).
+This project  [Demo](https://reack-shop.vercel.app/).
 
